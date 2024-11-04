@@ -4,8 +4,8 @@
 - [ ] Remove old info
 - [ ] Add info abt bachelor project Multiconsult
 - [ ] Add info abt classes
-- [ ] Upload new CV
-- [ ]
+- [ ] reorganize so HTML files are in their own folder (except index.html obv)
+- [X] Upload new CV
 - [ ] Living blog
   - [ ] Shortcuts / tutorial
   - [ ] Toki Pona w sitelen pona 
