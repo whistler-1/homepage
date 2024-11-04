@@ -1,0 +1,7 @@
+/* Override dark theme colors*/
+@media (prefers-color-scheme: light) {
+    :root {
+      --accent: #0dbdd0;
+      --accent-light: #b3ffff;
+    }
+}

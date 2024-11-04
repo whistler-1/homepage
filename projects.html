@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all">
+  <link rel="icon" type="image/x-icon" href="./media/favicon.ico">
+
+  <title>Benjamin Whistler</title>
+
+  <style>
+    /*see for click to zoom:
+    https://stackoverflow.com/questions/39858998/zoom-in-and-out-on-mouse-click-with-css
+    */
+    .zoom:hover {
+      transform: scale(2);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><img src="./media/drawing.svg" alt="abstract icon, blue square"></li>
+        <li><a href="/">Home</a></li>
+        <li><a class="current" href="projects.html">Projects</a></li>
+        <li><a href="about.html">About me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+
+
+    <!-- Content -->
+    <h1>Projects</h1>
+
+
+    <section>
+      <h4> Simple RPG </h4>
+      <p>I made this in LUA on the PICO-8 before starting my CS degree.<br>
+        Move with arrow keys, X to see inventory.
+      </p>
+      <p>
+        <iframe src="https://www.lexaloffle.com/bbs/widget.php?pid=simple_adventure_prototype" allowfullscreen
+          width="310" height="319" style="border: 2px solid gray; overflow:visible"> </iframe>
+      </p>
+    </section>
+
+    <section>
+      <h4>Oslomet Kino</h4>
+      <aside>
+        <br>
+        <figure>
+          <img src="./media/KinoSmall.webp" alt="image of a simple form ">
+          <figcaption>simple design</figcaption>
+        </figure>
+      </aside>
+      <p>An early project made to practice sending JSON data to a Java server using ajax in jquery.
+        This website doesn't use the same backend as the project did, so the backend code doesn't work at the moment.
+        The frontend, styled with bootstrap, can still be seen by clicking the button below:
+      </p>
+      <a href="webprog/webprog.html"><button>OsloMet Kino</button></a>
+    </section>
+
+    <h4> Redesigning Craigslist, an interactive prototype in Figma </h4>
+
+    <aside>
+      <br>
+      <figure>
+        <img src="./media/CLzoom.webp" alt="craigslist's homepage, very messy design">
+        <figcaption>Craigslist's current homepage</figcaption>
+      </figure>
+      <figure>
+        <img src="./media/figmazoom.webp" alt="my redesign of craigslist's page, easier to navigate">
+        <figcaption>My redesign</figcaption>
+      </figure>
+    </aside>
+
+    <p>This prototype attempts to give new users a more welcoming experience,
+      keeping in mind UX guidelines and design principles. I kept the most popular categories front and center,
+      using clean and simple design to avoid overwhelming new users. I've used
+      Craigslist's current color scheme, but had some fun making a new logo.
+      (Also try clicking the the "sign in" button, I'm quite happy with the result)</p>
+    <a
+      href="https://www.figma.com/proto/aavjAieJKIVu2sFV3uPHog/Craigslist-redesign?node-id=15-399&starting-point-node-id=15%3A399&scaling=scale-down&mode=design&t=9bYaSEQQebFVbyfT-1"><button>Craigslist
+        redesign</button></a>
+
+  </main>
+
+  <footer>
+    <p> Whistler · © 2024 </p>
+  </footer>
+
+</body>
+
+</html>
