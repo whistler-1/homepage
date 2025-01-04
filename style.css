@@ -5,3 +5,27 @@
       --accent-light: #b3ffff;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --accent: #0dbdd0;
+        --accent-light: #b3ffff;
+    }
+}
+
+.tagline{
+    margin-top: 0;
+    color: gray;
+}
+
+.portrait{
+    border: none;
+    background: none;
+}
+
+/*
+:root {
+    --accent: #0dbdd0;
+    --accent-light: #b3ffff;
+}
+*/
