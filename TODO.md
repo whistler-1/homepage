@@ -1,11 +1,11 @@
 # TODO
 
 - [X] Make GitHub repo
-- [ ] Remove old info
+- [X] Remove old info
 - [ ] Add info abt bachelor project Multiconsult
 - [ ] Add info abt classes
 - [ ] reorganize so HTML files are in their own folder (except index.html obv)
-- [X] Upload new CV
+- [ ] Upload new CV
 - [ ] Living blog
   - [ ] Shortcuts / tutorial
   - [ ] Toki Pona w sitelen pona 
