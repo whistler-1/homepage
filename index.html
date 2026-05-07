@@ -4,74 +4,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
   <link rel="stylesheet" href="style/style.css" type="text/css" media="all">
   <link rel="icon" type="image/x-icon" href="./media/favicon.ico">
-  
   <title>Benjamin Whistler</title>
 </head>
 
-<!-- Last edited: 2026-05-07 -->
+<body class="home">
 
-<body>
-
-  <!-- Navigation -->
   <header>
     <nav>
       <ul class="navbar">
-        <li><img src="./media/drawing.svg" alt="abstract icon, blue square"></li>
         <li><a class="current" href="/">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
-
-    <h1>Benjamin Borgen Whistler</h1>
-    <p class="tagline">
-      Backend software developer · M.Sc. student at UiO
-    </p>
   </header>
 
-  <main>
+  <main class="home-main">
+    <div class="home-layout">
 
-    <!-- Introduction -->
-    <p>
-      I'm a backend developer currently in the first year of my master's degree
-      in Programming and System Architecture at the University of Oslo.
-      My focus is on building reliable, well-structured server-side systems, mostly in
-      C# and .NET with Azure, but I've used quite a bit of Java for various projects lately.
-    </p>
-    <p>
-      <a class="button" href="https://www.linkedin.com/in/bbwhistler/">LinkedIn</a>
-      <a class="button" href="https://github.com/whistler-1">GitHub</a>
-      <a class="button" href="media/Benjamin_Whistler_Resume_1page.pdf" download>Resume</a>
-    </p>
+      <aside class="home-sidebar">
+        <h1 class="sidebar-name">Currently</h1>
+        <hr>
+        <p class="sidebar-label"></p>
+        <p class="sidebar-value">MSc @ UiO: <br> Programming &amp; System Architecture</p>
 
-    
-    <!--     
-    <aside class="portrait">
-      <br>
-      <img src="media/portrait.jpg" alt="A portrait image of Benjamin smiling at the camera.">
-    </aside> -->
+        <p class="sidebar-label">Building</p>
+        <p class="sidebar-value">Sensor pipelines for an Oslofjord digital twin</p>
 
-    <p>
-      During my bachelor's I built the backend for an internal planning tool at Multiconsult:
-      43 REST API endpoints in .NET/C#, layered architecture, Azure SQL.
-      I stayed on that summer to help ship a Revit plugin for BIM synchronization,
-      deployed across the company.
-    </p>
-    <p>
-      I'm in the early stages of my master's thesis on the Oslofjord Digital Twin project.
-      At the moment I'm focusing on reading broader relevant literature, but eventually I
-      hope to start looking into how to build efficient sensor-to-server data pipelines
-      for environmental monitoring.
-    </p>
+        <p class="sidebar-label">Learning</p>
+        <p class="sidebar-value sidebar-accent">日本語 — day <span id="jp-days">...</span></p>
 
+        <p class="sidebar-label">Previously</p>
+        <p class="sidebar-value">Backend dev, Multiconsult: .NET, Azure</p>
+
+        <p class="sidebar-label">Otherwise</p>
+        <p class="sidebar-value">photography - language - bouldering - music</p>
+        <p class="sidebar-footer">Oslo, Norway · 59°54'N 10°44'E</p>
+      </aside>
+
+      <div class="home-content">
+        <div class="home-hero">
+          <h1>Benjamin Borgen Whistler</h1>
+          <p class="tagline">Backend software developer · M.Sc. student at UiO</p>
+        </div>
+
+        <p>
+          I'm a backend developer currently in the first year of my master's degree
+          in Programming and System Architecture at the University of Oslo.
+          My focus is on building reliable, well-structured server-side systems, mostly in
+          C# and .NET with Azure, but I've used quite a bit of Java for various projects lately.
+        </p>
+        <p>
+          During my bachelor's I built the backend for an internal planning tool at Multiconsult:
+          43 REST API endpoints in .NET/C#, layered architecture, Azure SQL.
+          I stayed on that summer to help ship a Revit plugin for BIM synchronization,
+          deployed across the company.
+        </p>
+        <p>
+          I'm in the early stages of my master's thesis on the Oslofjord Digital Twin project.
+          At the moment I'm focusing on reading broader relevant literature, but eventually I
+          hope to start looking into how to build efficient sensor-to-server data pipelines
+          for environmental monitoring.
+        </p>
+
+        <div class="project-briefs">
+          <div class="brief">
+            <p class="brief-title">Revit Plugin — Multiconsult</p>
+            <p class="brief-sub">.NET plugin for BIM work synchronisation. Shipped to the company-wide toolbox, used across multiple construction projects.</p>
+          </div>
+          <div class="brief">
+            <p class="brief-title">Electrical Planning Tool — Multiconsult</p>
+            <p class="brief-sub">43 REST API endpoints in .NET/C#. Layered architecture, Entity Framework Core, Azure SQL, Entra ID.</p>
+          </div>
+        </div>
+
+        <p class="home-links">
+          <a href="https://www.linkedin.com/in/bbwhistler/">LinkedIn</a> ·
+          <a href="https://github.com/whistler-1">GitHub</a> ·
+          <a href="media/Benjamin_Whistler_Resume_1page.pdf" download>Resume</a>
+        </p>
+      </div>
+
+    </div>
   </main>
 
-  <footer>
-    <p> Whistler · © 2026 </p>
-  </footer>
+  <script>
+    const jpStart = new Date('2026-03-21');
+    const today = new Date();
+    const days = Math.floor((today - jpStart) / (1000 * 60 * 60 * 24));
+    document.getElementById('jp-days').textContent = days;
+  </script>
 </body>
 
 </html>
