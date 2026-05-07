@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&family=Schibsted+Grotesk:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+    --sans-font: 'Schibsted Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* B2 palette */
+    --bg:           #f5f3ee;
+    --accent-bg:    #eae8e2;
+    --text:         #1a1916;
+    --text-light:   #72706a;
+    --border:       #d8d5cc;
+    --accent:       #0a8f7a;
+    --accent-hover: #087a68;
+    --accent-text:  #fff;
+}
+
+/* Keep light palette in dark mode for now */
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light;
+        --bg:           #f5f3ee;
+        --accent-bg:    #eae8e2;
+        --text:         #1a1916;
+        --text-light:   #72706a;
+        --border:       #d8d5cc;
+        --accent:       #0a8f7a;
+        --accent-hover: #087a68;
+        --accent-text:  #fff;
+    }
+}
+
+/* Young Serif for headings */
+h1, h2, h3, h4 {
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+}
+
+.tagline {
+    margin-top: 0;
+    color: var(--text-light);
+}
+
+.portrait {
+    border: none;
+    background: none;
+}
