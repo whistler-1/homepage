@@ -1,0 +1,124 @@
+export default function Projects() {
+  return (
+    <>
+      <h1>Projects</h1>
+
+      <section>
+        <h4>
+          Oslofjord Digital Twin{" "}
+          <span style={{ fontWeight: "normal", color: "gray" }}>
+            · Master's thesis, in progress
+          </span>
+        </h4>
+        <p>
+          My master's thesis, currently in the early stages. I'm reading
+          relevant literature and starting to narrow down a direction; likely
+          something to do with data pipelines for environmental sensor data, but
+          nothing is set in stone yet.
+        </p>
+      </section>
+
+      <section>
+        <h4>
+          Revit Plugin for BIM Synchronization{" "}
+          <span style={{ fontWeight: "normal", color: "gray" }}>
+            · Multiconsult, 2025
+          </span>
+        </h4>
+        <p>
+          An internal plugin for Autodesk Revit handling BIM work
+          synchronization, deployed to the company-wide toolbox and used across
+          multiple construction planning projects. The work involved significant
+          refactoring of an existing codebase, replacing browser-based
+          authentication with an embedded WebView2 window, and a UI revamp in
+          WPF/XAML.
+        </p>
+      </section>
+
+      <section>
+        <h4>
+          Electrical Planning Tool{" "}
+          <span style={{ fontWeight: "normal", color: "gray" }}>
+            · Multiconsult, bachelor project 2025
+          </span>
+        </h4>
+        <p>
+          Backend for an internal web application used by discipline leaders to
+          create structured system and component lists for electrical planning,
+          following TFM/NS-3457 standards. Built 43 REST API endpoints in
+          .NET/C# with a layered architecture, Entity Framework Core, and Azure
+          SQL. Hosted on Azure with Microsoft Entra ID for authentication.
+        </p>
+      </section>
+
+      <section>
+        <h4>
+          Parallelized Prime Sieve &amp; Factorizer{" "}
+          <span style={{ fontWeight: "normal", color: "gray" }}>
+            · UiO, spring 2026
+          </span>
+        </h4>
+        <p>
+          Cache-friendly, multithreaded implementation of the Sieve of
+          Eratosthenes and a prime factorization engine in Java. Optimized for
+          parallel execution with attention to cache line utilization and thread
+          workload distribution. Built as part of a graduate course in efficient
+          parallel programming.{" "}
+          <em>(Repository currently private to avoid plagiarism.)</em>
+        </p>
+      </section>
+
+      <section>
+        <h4>
+          Craigslist Redesign{" "}
+          <span style={{ fontWeight: "normal", color: "gray" }}>
+            · Figma prototype, 2023
+          </span>
+        </h4>
+        <figure>
+          <img
+            src="/media/CLzoom.webp"
+            alt="Craigslist's current homepage, cluttered design"
+          />
+          <figcaption>Craigslist's current homepage</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/media/figmazoom.webp"
+            alt="My redesign of Craigslist, cleaner layout"
+          />
+          <figcaption>My redesign</figcaption>
+        </figure>
+        <p>
+          An interactive prototype redesigning Craigslist's user experience with
+          modern UX principles: cleaner navigation, accessible layout, and a new
+          logo, while keeping the existing color scheme and core functionality.
+          Try clicking around.
+        </p>
+        <a href="https://www.figma.com/proto/aavjAieJKIVu2sFV3uPHog/Craigslist-redesign?node-id=15-399&starting-point-node-id=15%3A399&scaling=scale-down&mode=design&t=9bYaSEQQebFVbyfT-1">
+          <button>Open prototype</button>
+        </a>
+      </section>
+
+      <section>
+        <h4>
+          Simple RPG{" "}
+          <span style={{ fontWeight: "normal", color: "gray" }}>
+            · PICO-8, 2021
+          </span>
+        </h4>
+        <p>
+          A small RPG I made in Lua on the PICO-8 fantasy console before
+          starting my CS degree. Move with arrow keys, X to see inventory.
+        </p>
+        <iframe
+          src="https://www.lexaloffle.com/bbs/widget.php?pid=simple_adventure_prototype"
+          allowFullScreen
+          width="310"
+          height="319"
+          style={{ border: "2px solid gray", overflow: "visible" }}
+        ></iframe>
+      </section>
+    </>
+  );
+}
